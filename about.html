@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Fotis Zagas Photography</title>
+  <meta name="description" content="Learn about Fotis Zagas, a professional photographer based in Thessaloniki, Greece, specializing in architectural photography and visual content." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/x-icon" href="logo.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== SIDEBAR NAVIGATION ===================== -->
+  <aside class="sidebar" id="sidebar">
+    <a href="index.html" class="sidebar__logo">
+      <img src="assets/logo.svg" alt="Fotis Zagas — Photography" />
+    </a>
+
+    <nav class="sidebar__nav">
+      <a href="index.html" class="sidebar__link">Home</a>
+      <a href="about.html" class="sidebar__link">About</a>
+      <a href="services.html" class="sidebar__link">Services</a>
+      <a href="personal-work.html" class="sidebar__link">Personal Work</a>
+      <a href="contact.html" class="sidebar__link">Contact</a>
+    </nav>
+
+    <div class="sidebar__footer">
+      <a href="https://www.instagram.com/fotis_zagas/" target="_blank" rel="noopener noreferrer" class="sidebar__social">Instagram</a>
+    </div>
+  </aside>
+
+  <!-- ===================== MOBILE HEADER ===================== -->
+  <header class="mobile-header" id="mobile-header">
+    <a href="index.html" class="mobile-header__logo">
+      <img src="assets/logo.svg" alt="Fotis Zagas" />
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+    </button>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <nav class="mobile-drawer__nav">
+      <a href="index.html" class="mobile-drawer__link">Home</a>
+      <a href="about.html" class="mobile-drawer__link">About</a>
+      <a href="services.html" class="mobile-drawer__link">Services</a>
+      <a href="personal-work.html" class="mobile-drawer__link">Personal Work</a>
+      <a href="contact.html" class="mobile-drawer__link">Contact</a>
+    </nav>
+  </div>
+
+
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <main class="main" id="main">
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="about" id="about">
+      <div class="about__grid">
+        <!-- Portrait Image -->
+        <div class="about__image reveal">
+          <img src="assets/fotis.jpg" alt="Fotis Zagas — Photographer" loading="lazy" />
+        </div>
+
+        <!-- Text Content -->
+        <div class="about__content">
+          <h2 class="section-heading reveal">About</h2>
+          <div class="accent-line reveal"></div>
+          <p class="about__text reveal">
+            Fotis Zagas is a professional photographer based in Thessaloniki, Greece,
+            specializing in architectural photography, drone sessions, immersive 3D
+            virtual tours, and video production. With a meticulous eye for composition
+            and light, every project becomes a visual narrative that reveals the soul
+            of a space.
+          </p>
+          <p class="about__text reveal">
+            Bridging technical precision with artistic vision, the work goes beyond
+            simple documentation — it transforms properties and environments into
+            compelling stories that resonate with audiences and elevate brands.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <span class="footer__copy">&copy; <span id="year"></span> Fotis Zagas</span>
+        <span class="footer__tagline">Photography &amp; Visual Content</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
